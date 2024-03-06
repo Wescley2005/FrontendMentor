@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    h1 {
+        font-family: YoungSerif, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+    h2 {
+        color: hsl(14, 45%, 36%);
+        font-weight: 700;
+    }
+
+    h3 {
+        color: hsl(332, 51%, 32%);
+        font-weight: 600;
+    }
+
+    p {
+        color: hsl(24, 5%, 18%);
+        font-size: 16px;
+    }
+}
+
+main {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+#preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    padding-left: 30px;
+}
+
+strong {
+    color: hsl(30, 10%, 34%);
+}
+
+hr {
+    background-color: hsl(30, 18%, 87%);
+    padding: 1px 0px 1px 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.divnutri {
+    display: flex; 
+    flex-wrap: nowrap; 
+    align-items: center;
+}
+
+.name {
+    flex: 1;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.values {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    margin-left: auto;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 0.5em;
+    margin-left: 15px;
+}
+
+li::before {
+    content: "•";
+    display: inline-block;
+    position: absolute;
+    left: -1em;
+    color: hsl(14, 45%, 36%);
+}
