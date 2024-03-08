@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: Hanken;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: Hanken, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 {
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 18px;
+}
+
+#container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#result {
+    width: 200px;
+    padding: 3% 1%;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+#summary {
+    width: 225px;
+    height: 18em;
+    padding: 1.2em 1em 1.2em 2em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px hsl(221, 100%, 96%) ;
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+#numbera {
+    display: inline-block;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 1em 1.8em;
+    border-radius: 10em;
+    margin: 1em;
+}
+
+#numberb {
+    font-size: 2.4em;
+}
+
+#numberc {
+    font-size: 0.75em;
+    color: hsl(241, 100%, 89%);
+}
+
+#ph {
+    font-size: 0.8em;
+}
+
+
+#reaction, #memory, #verbal, #visual {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    padding: 0.6em;
+    border-radius: 10px;
+    margin-bottom: 0.6em;
+    .name {
+        margin-left: -2em;
+        color: hsl(0, 100%, 67%);
+    }
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    .name {
+        color: hsl(39, 100%, 56%);
+    }
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    .name {
+        margin-left: -3em;
+        color: hsl(166, 100%, 37%);
+    }
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    .name {
+        margin-left: -3em;
+        color: hsl(234, 85%, 45%);
+    }
+}
+
+button {
+    margin-top: 0.5em;
+    cursor: pointer;
+    width: 100%;
+    height: 3em;
+    border-radius: 2em;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+}
+
+button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 500px) {
+    #container {
+        flex-direction: column;
+    }
+    #result {
+        width: 100%;
+    }
+    #summary {
+        padding: 3% 1%;
+    }
+}
